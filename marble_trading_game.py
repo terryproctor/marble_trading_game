@@ -3,6 +3,8 @@ import random
 #A trading game based on a real-life simulation used to coach new  traders
 
 starting_purse = 1000
+purse = 0
+purse += starting_purse
 
 marbles = []
 marbles.extend(["red"]*4)
@@ -41,4 +43,7 @@ def print_rules():
 
 #checking purse and green and red left
 def check_status():
+    print(f"Purse: £{purse}.")
+    print(f"Reds: {red}, Green: {green}")
 
+#ask user to place a bet
